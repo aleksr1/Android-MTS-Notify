@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <color name="swipe_color_1">#B6DB49</color> 
+<!--  33B5E5   B6DB49 -->
+    <color name="swipe_color_2">#99CC00</color>
+<!--  0099CC   99CC00 -->
+    <color name="swipe_color_3">#8ABD00</color>
+<!--     8ABD00 -->
+    <color name="swipe_color_4">#7CAF00</color>
+<!--     7CAF00 -->
+
+    <color name="com_parse_ui_parse_login_button">#40000000</color>
+    <color name="com_parse_ui_parse_login_button_push">#30000000</color>
+    <color name="com_parse_ui_parse_login_button_focus">#35000000</color>
+    <color name="com_parse_ui_parse_login_help_button_label">#000000</color>
+    <color name="com_parse_ui_parse_login_help_button_label_push">#AAAAAA</color>
+    <color name="com_parse_ui_parse_login_help_button_label_focus">#CCCCCC</color>
+    <color name="com_parse_ui_parse_login_text_hint">@android:color/black</color>
+    <color name="com_parse_ui_parse_login_display_text">@android:color/black</color>
+    
+</resources>

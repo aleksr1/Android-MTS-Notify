@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 6 elements from project &apos;MTSNotify&apos;&#x0A;- Original project: &apos;MTSNotify&apos;&#x0A;- Original elements:&#x0A;     about.xml&#x0A;     feedback.xml&#x0A;     login.xml&#x0A;     notification_history.xml&#x0A;     profile.xml&#x0A;     splash.xml" description="Delete elements" element1="res/menu/feedback.xml" element2="res/menu/splash.xml" element3="res/menu/about.xml" element4="res/menu/profile.xml" element5="res/menu/login.xml" element6="res/menu/notification_history.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1414506297218" subPackages="false" version="1.0"/>
+</session>

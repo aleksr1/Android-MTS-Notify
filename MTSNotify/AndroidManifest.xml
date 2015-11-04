@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vcps.notify"
+    android:versionCode="4"
+    android:versionName="2.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.vcps.notify.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.vcps.notify.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.vcps.notify.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vcps.notify.LoginActivity"
+            android:label="@string/title_activity_login_signup" >
+    
+        </activity>
+        <activity
+            android:name="com.vcps.notify.SplashActivity"
+            android:label="@string/app_name" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.parse.ui.ParseLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME"
+                android:value="true" />
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.FACEBOOK_LOGIN_ENABLED"
+                android:value="false" />
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.TWITTER_LOGIN_ENABLED"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.vcps.notify.DashboardActivity"
+            android:label="@string/title_activity_dashboard" 
+        />
+        <activity
+            android:name="com.vcps.notify.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.vcps.notify.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcps.notify.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.vcps.notify.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.vcps.notify.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcps.notify.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.vcps.notify.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:parentActivityName="com.vcps.notify.DashboardActivity">
+          	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcps.notify.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.vcps.notify.NotificationHistoryActivity"
+            android:label="@string/title_activity_notification_history"
+            android:parentActivityName="com.vcps.notify.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcps.notify.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.vcps.notify.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" 
+            android:parentActivityName="com.vcps.notify.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcps.notify.ProfileActivity" />
+        </activity>
+       
+        <!-- <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/push"/> -->
+
+        <service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.vcps.notify" />
+            </intent-filter>
+        </receiver>
+
+        
+    </application>
+
+</manifest>

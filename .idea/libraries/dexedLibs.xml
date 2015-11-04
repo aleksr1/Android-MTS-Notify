@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/appcompat_v7-b9065b5c33492f1baeb6c25ea97263af.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/android-support-v7-appcompat-02a81a3bcfb07bb8e6a4883a8cb7701d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/android-support-v4-eef6dd2c594be3b14459d49ab1f3983b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/bolts-20573f15da96eaf711f82e117a8cc004.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/parseloginui-bd3d356f4e61be56f887008800f267ba.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/Parse-1.5.1-f51f70658062804d664c5f0a74d92928.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/bin/dexedLibs/facebooksdk-61f82fc51d04cc43d6df9a42193c13a8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

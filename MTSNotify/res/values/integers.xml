@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <integer name="feedback_edittext">5</integer>
+    <integer name="feedback_length_edittext">200</integer>
+    
+</resources>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MTSNotify/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MTSNotify/libs/Parse-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

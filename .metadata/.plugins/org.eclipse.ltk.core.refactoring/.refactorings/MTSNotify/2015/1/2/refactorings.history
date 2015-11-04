@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.vcps.mtsnotify&apos; to &apos;com.vcps.notify&apos;&#x0A;- Original project: &apos;MTSNotify&apos;&#x0A;- Original element: &apos;MTSNotify/src/com.vcps.mtsnotify&apos;&#x0A;- Renamed element: &apos;MTSNotify/src/com.vcps.notify&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.vcps.mtsnotify&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.vcps.mtsnotify" name="com.vcps.notify" qualified="false" references="true" stamp="1420550468145" textual="false" version="1.0"/>
+</session>
