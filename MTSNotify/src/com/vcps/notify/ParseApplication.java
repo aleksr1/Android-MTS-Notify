@@ -15,7 +15,7 @@ public class ParseApplication extends Application {
         super.onCreate();
        
         // Tester App
-        Parse.initialize(this, "WNKPnvpzxRYMBdJzkF5aPFpiWqBefYRlGSXKv2CI", "gn74Tjoeg13jESfCf6LqKvUCx1bmskq1A8rqwAsQ");
+        Parse.initialize(this, "REDACTED", "REDACTED");
         //ParseObject installation = ParseInstallation.getCurrentInstallation();
         
         
